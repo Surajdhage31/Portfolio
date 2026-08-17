@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // --- CONFIG: Typing Effect ---
-    const textToType = "B.Tech Cybersecurity specialist blending defensive SOC workflows with clean web experiences.";
+    const textToType = "Persuing B.E Cybersecurity Student blending defensive SOC workflows with clean web experiences.";
     const typingElement = document.getElementById('typewriter');
     const typingSpeed = 35; // milliseconds per character
     

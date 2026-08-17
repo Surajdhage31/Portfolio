@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suraj Dhage | Cybersecurity Analyst</title>
+    <title>Suraj Dhage | Cybersecurity Student</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigation -->
     <nav class="cyber-nav">
-        <div class="logo">SD_SEC_PROTOCOL</div>
+        <div class="logo">Portfolio</div>
         <ul class="nav-links">
-            <li><a href="#about">//01_ABOUT</a></li>
-            <li><a href="#projects">//02_PROJECTS</a></li>
-            <li><a href="#skills">//03_STACK</a></li>
-            <li><a href="#contact">//04_CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -39,9 +39,9 @@
 
     <!-- About Section -->
     <section id="about" class="container">
-        <h2 class="section-title">System_Status: <span class="highlight">ONLINE</span></h2>
+        <h2 class="section-title"> <span class="highlight">About</span></h2>
         <div class="panel">
-            <p>I am a cybersecurity specialist bridging the gap between infrastructure defense and secure web development. My hands-on experience ranges from analyzing malicious network payloads in Wireshark to building interactive, zero-trust analytical dashboards.</p>
+            <p>I am a cybersecurity student bridging the gap between infrastructure defense and secure web development. My hands-on experience ranges from analyzing malicious network payloads in Wireshark to building interactive, zero-trust analytical dashboards.</p>
             <p>I approach digital security with an attacker's mindset and a defender's precision to build resilient digital systems.</p>
         </div>
     </section>
@@ -50,7 +50,7 @@
     <section id="projects" class="container">
         <h2 class="section-title">Directory: <span class="highlight">/PROJECTS</span></h2>
         <div class="grid-layout">
-            
+         
             <!-- Project 1 -->
             <article class="card">
                 <div class="card-header">
@@ -79,15 +79,16 @@
                     <span>API Security</span>
                     <span>Incident Response</span>
                 </div>
+                 <a href="https://github.com/Surajdhage31/Log-Hunter.git" target="_blank" rel="noopener noreferrer" class="link-out">-> VIEW_SOURCE</a>
             </article>
 
             <!-- Project 3 -->
             <article class="card">
                 <div class="card-header">
                     <h3>Network Security Sandbox</h3>
-                    <span class="status">LAB_ENV</span>
+                    <span class="status">Lab Environment</span>
                 </div>
-                <p>Isolated virtual environment to simulate multi-vector network attacks. Captured live payloads via Wireshark to analyze handshake anomalies.</p>
+                <p>Isolate virtual environment to simulate multi-vector network attacks. Capture live payloads via Wireshark to analyze handshake anomalies.</p>
                 <div class="tags">
                     <span>Wireshark</span>
                     <span>VMware</span>
@@ -96,8 +97,101 @@
             </article>
 
         </div>
-    </section>
+    
+  
+    
+    <!-- Section Header & Initial Trigger -->
+    
+<!-- Trigger Button (Visible initially) -->
+<div id="show-more-wrapper" style="text-align: center; margin-bottom: 30px;">
+  <button id="show-more-btn" onclick="showAllProjects()" class="link-out" style="cursor: pointer;">
+    SHOW_MORE_PROJECTS &gt;&gt;
+  </button>
+</div>
+   
+<!-- All 4 Projects Container (Hidden initially) -->
+<div id="all-projects" class="projects-grid" style="display: none;">
 
+  <!-- Project 1 -->
+   <article class="card">
+    <div class="grid-layout">
+  <div class="project-card">
+
+    <h3 class="text-xl font-bold text-white mb-2">CIA Triad & Encryption Vault Simulator</h3>
+    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+      Engineered a multi-layered cryptographic pipeline modeling Confidentiality (AES-256), Integrity (SHA-256/HMAC), and Availability (rate limiting). Features automated test routines to simulate tampered payloads.
+    </p>
+    <div class="tags">
+      <span>Python</span>
+      <span>AES-256</span>
+      <span>Cryptography</span>
+      <span>HMAC</span>
+    </div>
+    <a href="https://github.com/Surajdhage31/cia-triad-simulator" target="_blank" rel="noopener noreferrer" class="link-out">-&gt; VIEW_SOURCE</a>
+  </div>
+ </article>
+  <!-- Project 2 -->
+   <article class="card">
+  <div class="project-card">
+    <h3 class="text-xl font-bold text-white mb-2">Asynchronous Port & Vulnerability Scanner</h3>
+    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+      High-performance multithreaded reconnaissance tool capable of scanning TCP/UDP ports, detecting service banners, and matching vulnerabilities against known CVE databases with custom rate limiting.
+    </p>
+    <div class="tags">
+      <span>Python</span>
+      <span>Sockets</span>
+      <span>VAPT</span>
+      <span>Recon</span>
+    </div> 
+    <a href="https://github.com/Surajdhage31/python-cybersecurity-projects/blob/main/port_scanner.py" target="_blank" rel="noopener noreferrer" class="link-out">-&gt; VIEW_SOURCE</a> 
+  </div>
+   </article>
+  <!-- Project 3 -->
+   <article class="card">
+  <div class="project-card">
+    <h3 class="text-xl font-bold text-white mb-2">Packet Sniffer & Intrusion Detection Script</h3>
+    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+      Low-level packet analyzer utilizing Raw Sockets and Scapy to dissect IP headers, TCP flags, and payloads. Detects SYN floods, port scans, and unencrypted transmission in real-time.
+    </p>
+    <div class="tags">
+      <span>Python</span>
+      <span>Scapy</span>
+      <span>Pack Analysis</span>
+      <span>NIDS</span>
+    </div>
+    <a href="https://github.com/Surajdhage31/python-cybersecurity-projects/blob/main/packet_sniffer.py" target="_blank" rel="noopener noreferrer" class="link-out">-&gt; VIEW_SOURCE</a>
+  </div>
+ </article>
+  <!-- Project 4 -->
+   <article class="card">
+  <div class="project-card">
+    
+    <h3 class="text-xl font-bold text-white mb-2">Automated Log & Incident Telemetry Analyzer</h3>
+    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+      SOC log parser ingesting system/API logs, extracting IP indicators, and cross-referencing spike anomalies against threat intelligence baselines to automate IR summaries.
+    </p>
+    <div class="tags">
+      <span>Python</span>
+      <span>Regex</span>
+      <span>SOC Alerting</span>
+      <span>Incident Response</span>
+    </div>
+    <a href="https://github.com/Surajdhage31/python-cybersecurity-projects/blob/main/honeypot.py" target="_blank" rel="noopener noreferrer" class="link-out">-&gt; VIEW_SOURCE</a> 
+  </div>
+ </article>
+</div> 
+</div>
+</section>
+
+    <section id="projects" class="py-16 bg-slate-950 text-emerald-400 font-mono">
+<!-- JavaScript to show all projects and hide button -->
+<script>
+  function showAllProjects() {
+    document.getElementById('all-projects').style.display = 'grid';
+    document.getElementById('show-more-wrapper').style.display = 'none';
+  }
+</script>
+  </div>
     <!-- Skills Section -->
     <section id="skills" class="container">
         <h2 class="section-title">System_Resources: <span class="highlight">/SKILLS</span></h2>
@@ -113,7 +207,7 @@
             </div>
             <div class="skill-category">
                 <h3>> TOOLS_BIN</h3>
-                <ul>
+                <ul type="disc">
                     <li>Wireshark</li>
                     <li>MS Sentinel / Defender</li>
                     <li>Linux (Kali/Ubuntu)</li>
@@ -139,7 +233,7 @@
             <p class="mb-2">System open for internships and collaboration. Initiate connection.</p>
             <form id="contactForm">
                 <div class="input-group">
-                    <label>> IDENTITY</label>
+                    <label>>IDENTITY</label>
                     <input type="text" placeholder="Enter Name..." required>
                 </div>
                 <div class="input-group">
@@ -149,14 +243,27 @@
                 <div class="input-group">
                     <label>> PAYLOAD (MESSAGE)</label>
                     <textarea rows="4" placeholder="Compile message..." required></textarea>
-                </div>
-                <button type="submit" class="btn-primary">[ TRANSMIT_DATA ]</button>
-            </form>
-            <div class="contact-info">
-                <p>EMAIL: surajdhage2006@gmail.com</p>
-                <p>PHONE: +91 705749644</p>
-                <p>LINK: <a href="https://linkedin.com/in/surajdhage">linkedin.com/in/surajdhage</a></p>
-            </div>
+               </div> 
+    <button type="submit" class="btn-primary">[ TRANSMIT_DATA ]</button> 
+</form> 
+
+<div class="contact-info"> 
+    <!-- Gmail Link Fix: Use standard href with mailto protocol -->
+    <a href="mailto:surajdhage2006@gmail.com" target="_blank" rel="noopener"> 
+        <img src="C:\Users\ASUS\OneDrive\Desktop\Portfolio\email_PNG11.png" alt="Gmail" width="45" height="45"> 
+    </a>
+
+    <!-- Phone Link Fix: Use standard href with tel protocol -->
+    <a href="tel:+917057496447" target="_blank" rel="noopener"> 
+        <img src="C:\Users\ASUS\OneDrive\Desktop\Portfolio\phone_PNG48987.png" alt="Phone" width="45" height="45"> 
+    </a> 
+
+    <!-- LinkedIn Link Fix: Kept valid web URL -->
+    <a href="https://linkedin.com/in/surajdhage" target="_blank" rel="noopener"> 
+        <img src="C:\Users\ASUS\OneDrive\Desktop\Portfolio\image.png" alt="LinkedIn" width="50" height="50"> 
+    </a>
+</div>
+
         </div>
     </section>
 
